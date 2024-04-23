@@ -13,6 +13,7 @@ import { RiCommunityLine } from "react-icons/ri";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const baseUrl = `https://ssvamsee.github.io/cloud2labs`
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -33,7 +34,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="logo">
-          <img src='Assets/icon.png' alt="brand" className="logo-img" />
+          <img src={`${baseUrl}/Assets/icon.png`} alt="brand" className="logo-img" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

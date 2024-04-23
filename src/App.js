@@ -5,7 +5,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact/Contact";
-import Community from "./components/Community";
+import Community from "./components/Community/Community";
 import Pre from "./components/Pre";
 import "./style.css";
 import "./App.css";
