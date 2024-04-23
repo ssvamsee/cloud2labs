@@ -9,6 +9,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Community() {
+  const baseUrl = window?.location?.href
   return (
     <Container fluid className="about-section" id="community">
       <h1 className="project-heading">
@@ -17,7 +18,7 @@ export default function Community() {
       <p style={{ color: "white" }}>
         Here are a few projects We've worked on recently.
       </p>
-      <img src="/Assets/coming-soon.png" alt='coming-soon'/>
+      <img src={`${baseUrl}/Assets/coming-soon.png`} alt='coming-soon'/>
       <div class="waviy">
         <span style={{"--i":1}}>c</span>
         <span style={{"--i":2}}>o</span>

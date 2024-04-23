@@ -5,6 +5,7 @@ import Particle from "../Particle";
 
 
 function Projects() {
+  const baseUrl = window?.location?.href
   return (
     <Container fluid className="project-section" id="projects">
       <Particle />
@@ -19,7 +20,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               key={1}
-              imgPath="/Assets/Projects/oconnect.png"
+              imgPath={`${baseUrl}/Assets/Projects/oconnect.png`}
               title="OConnect"
               description="Worldwide connectivity is todays necessity. OCONNECT is an online video conferencing tool with HD audio quality that provides unmatched clarity and quality to every virtual connection."
               demoLink="https://oconnect.ai/"
@@ -28,7 +29,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
             key={2}
-              imgPath="/Assets/Projects/chatify.png"
+              imgPath={`${baseUrl}/Assets/Projects/chatify.png`}
               title="OPAL"
               description="The Chat Application which connects users among the world and unites through audio and video call along with text messages"
               demoLink="https://o-pal-dev.onpassive.com/"
@@ -37,7 +38,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
             key={3}
-              imgPath="/Assets/Projects/cellixbio.png"
+              imgPath={`${baseUrl}/Assets/Projects/cellixbio.png`}
               title="Cellix-Bio"
               description="Cellix Bio is a pioneering biotechnology company specializing in cutting-edge solutions for personalized medicine and drug development. They leverage advanced technologies to facilitate precision diagnostics and innovative therapies, aiming to revolutionize healthcare by tailoring treatments to individual patient needs"
               ghLink="https://github.com/ssvamsee/Cellix_Bio/tree/bdd78160e3d0ed6b18af7f320926c60273729871/cellixbio"
@@ -48,7 +49,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
             key={4}
-              imgPath="/Assets/Projects/CamArtisians.png"
+              imgPath={`${baseUrl}/Assets/Projects/CamArtisians.png`}
               title="CamArtisans"
               description="CamArtisians is a Web application that connects
               freelance camera operators with clients in need
@@ -64,7 +65,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
             key={5}
-              imgPath="/Assets/Projects/camcrew.png"
+              imgPath={`${baseUrl}/Assets/Projects/camcrew.png`}
               title="CamCrew"
               description="CamCrew is a web application or project showcasing a platform for image processing and computer vision, potentially aimed at empowering users with tools for visual data analysis. It likely offers features or demonstrations utilizing computer vision techniques, fostering exploration and experimentation within the realm of image-based technologies. It provides an interface or resources for users interested in delving into computer vision applications."
               ghLink="https://github.com/ssvamsee/CamCrew/tree/main/camcrew"
@@ -75,7 +76,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
             key={6}
-              imgPath='/Assets/Projects/jlmush.png'
+              imgPath={`${baseUrl}/Assets/Projects/jlmush.png`}
               title="Jlmush"
               description="Doctor-patient consultation applications provide a convenient and accessible platform for patients to connect with healthcare providers. With features such as virtual appointments and
               secure messaging, patients can receive medical

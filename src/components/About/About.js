@@ -7,6 +7,7 @@ import Toolstack from "./Toolstack";
 import TrackVisibility from "react-on-screen";
 
 function About() {
+  const baseUrl = window?.location?.href
   return (
     <Container fluid className="about-section" id="about">
       <Particle />
@@ -30,7 +31,7 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "10px" }}
             className="about-img"
             >
-            <img src='/Assets/about.svg' alt="about" className="img-fluid about-image" />
+            <img src={`${baseUrl}/Assets/about.svg`} alt="about" className="img-fluid about-image" />
 
           </Col>
         </Row>

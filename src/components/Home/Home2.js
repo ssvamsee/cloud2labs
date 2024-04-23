@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 
 function Home2() {
+  const baseUrl = window?.location?.href
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -43,7 +44,7 @@ function Home2() {
             <Tilt>
               <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src="/Assets/avatar.svg" alt="home"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={`${baseUrl}/Assets/avatar.svg`} alt="home"/>
               }
               </TrackVisibility>
             </Tilt>

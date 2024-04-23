@@ -15,6 +15,7 @@ const initialState = {
 export const Contact = (props) => {
   // const [{ name, email, message }, setState] = useState(initialState);
   const [formData, setFormData] = useState(initialState);
+  const baseUrl = window?.location?.href
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -51,7 +52,7 @@ export const Contact = (props) => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src="/Assets/contact.svg" alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={`${baseUrl}/Assets/contact.svg`} alt="Contact Us"/>
               }
             </TrackVisibility>
           </Col>
