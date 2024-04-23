@@ -33,7 +33,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="logo">
-          <img src='Assets/cloud2labs_logo.svg' alt="brand" className="logo-img" />
+          <img src='Assets/icon.png' alt="brand" className="logo-img" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
