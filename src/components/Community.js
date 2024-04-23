@@ -17,7 +17,7 @@ export default function Community() {
       <p style={{ color: "white" }}>
         Here are a few projects We've worked on recently.
       </p>
-      <img src="Assets/coming-soon.png" alt='coming-soon'/>
+      <img src="/Assets/coming-soon.png" alt='coming-soon'/>
       <div class="waviy">
         <span style={{"--i":1}}>c</span>
         <span style={{"--i":2}}>o</span>

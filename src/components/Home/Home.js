@@ -68,7 +68,7 @@ function Home({ height }) {
                     <img
                       className={isVisible ? "animate__animated animate__zoomIn" : ""}
                       style={{ maxHeight: "450px" }}
-                      src="Assets/home-main.svg"
+                      src="/Assets/home-main.svg"
                       alt="home"
                     />
                   )}

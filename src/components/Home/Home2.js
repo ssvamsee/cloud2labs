@@ -43,7 +43,7 @@ function Home2() {
             <Tilt>
               <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src="Assets/avatar.svg" alt="home"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src="/Assets/avatar.svg" alt="home"/>
               }
               </TrackVisibility>
             </Tilt>
