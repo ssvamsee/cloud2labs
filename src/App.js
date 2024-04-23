@@ -12,6 +12,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const baseUrl = window?.location?.href
   const [load, upadateLoad] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,7 +21,7 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-
+console.log(baseUrl)
   return (
     <div className="App" id={load ? "no-scroll" : "scroll"}>
       {
