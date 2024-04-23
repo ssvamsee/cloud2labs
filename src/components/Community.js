@@ -9,7 +9,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Community() {
-  const baseUrl = window?.location?.href
+  const baseUrl = `https://ssvamsee.github.io/cloud2labs`
   return (
     <Container fluid className="about-section" id="community">
       <h1 className="project-heading">

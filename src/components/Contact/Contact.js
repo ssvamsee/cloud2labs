@@ -15,7 +15,7 @@ const initialState = {
 export const Contact = (props) => {
   // const [{ name, email, message }, setState] = useState(initialState);
   const [formData, setFormData] = useState(initialState);
-  const baseUrl = window?.location?.href
+  const baseUrl = `https://ssvamsee.github.io/cloud2labs`
 
   const handleChange = (e) => {
     const { name, value } = e.target;

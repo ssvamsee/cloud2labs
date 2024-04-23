@@ -7,7 +7,7 @@ import Toolstack from "./Toolstack";
 import TrackVisibility from "react-on-screen";
 
 function About() {
-  const baseUrl = window?.location?.href
+  const baseUrl = `https://ssvamsee.github.io/cloud2labs`
   return (
     <Container fluid className="about-section" id="about">
       <Particle />
