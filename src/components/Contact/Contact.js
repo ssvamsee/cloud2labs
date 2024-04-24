@@ -13,7 +13,6 @@ const initialState = {
   message: "",
 };
 export const Contact = (props) => {
-  // const [{ name, email, message }, setState] = useState(initialState);
   const [formData, setFormData] = useState(initialState);
   const baseUrl = `https://ssvamsee.github.io/cloud2labs`
 
@@ -27,7 +26,6 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(name, email, message);
     emailjs
       .sendForm("service_mm4kpug", "template_m8d7e3u", e.target, "jf3VjaUQUiTAMzRwx")
       .then(
@@ -43,16 +41,16 @@ export const Contact = (props) => {
   };
 
   return (
-       <Container fluid className="about-section" id="contact">
-              <Particle />
-              <Container>
+    <Container fluid className="about-section" id="contact">
+      <Particle />
+      <Container>
         <Row className="align-items-center">
-        <ToastContainer />
+          <ToastContainer />
 
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={`${baseUrl}/Assets/contact.svg`} alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={`${baseUrl}/Assets/contact.svg`} alt="Contact Us" />
               }
             </TrackVisibility>
           </Col>
@@ -60,64 +58,64 @@ export const Contact = (props) => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In <span className="highlghter">Touch</span></h2>
-                <form name="sentMessage" validate onSubmit={handleSubmit}>
-                <div className="row">
-                  <div>
+                  <h2>Get In <span className="highlghter">Touch</span></h2>
+                  <form name="sentMessage" validate onSubmit={handleSubmit}>
+                    <div className="row">
+                      <div>
+                        <div className="form-group">
+                          <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            className="form-control"
+                            placeholder="Please Enter Your Full Name"
+                            required
+                            value={formData.name}
+                            onChange={handleChange}
+                          />
+                          <p className="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="form-group">
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            className="form-control"
+                            placeholder="Please Enter Your Email To Contact"
+                            required
+                            value={formData.email}
+                            onChange={handleChange}
+                          />
+                          <p className="help-block text-danger"></p>
+                        </div>
+                      </div>
+                    </div>
                     <div className="form-group">
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
+                      <textarea
+                        name="message"
+                        id="message"
                         className="form-control"
-                        placeholder="Please Enter Your Full Name"
+                        rows="4"
+                        placeholder="Message"
                         required
-                        value={formData.name}
+                        value={formData.message}
                         onChange={handleChange}
-                      />
+                      ></textarea>
                       <p className="help-block text-danger"></p>
                     </div>
-                  </div>
-                  <div>
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Please Enter Your Email To Contact"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Message"
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  <span className="highlghter">Send Message</span>
-                </button>
-              </form>
-              </div>}
+                    <div id="success"></div>
+                    <button type="submit" className="btn btn-custom btn-lg">
+                      <span className="highlghter">Send Message</span>
+                    </button>
+                  </form>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>
-        </Container>
       </Container>
+    </Container>
   )
 }
 export default Contact

@@ -1,10 +1,7 @@
 import React from "react";
 import { Card, Row, Button, Col } from "react-bootstrap";
-// import Card from "react-bootstrap/Card";
-// import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import { Tooltip } from "react-tooltip"; // Correct the import
 
 function ProjectCards(props) {
   return (

@@ -21,7 +21,7 @@ function Home2() {
               Let's <span className="highlghter"> Intoduce </span> Ourselves
             </h1>
             <p className="home-about-body">
-            Cloud2labs specializes in innovative cloud solutions, empowering businesses to succeed in the digital era.
+              Cloud2labs specializes in innovative cloud solutions, empowering businesses to succeed in the digital era.
               <br />
               <br />Our expert team provides
               <i>
@@ -37,15 +37,15 @@ function Home2() {
               <br />
               Contact us to discover how &nbsp; <b className="highlghter">Cloud 2 Labs</b> &nbsp;can elevate your business to new heights
 
-   
+
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
               <TrackVisibility>
-              {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={`${baseUrl}/Assets/avatar.svg`} alt="home"/>
-              }
+                {({ isVisible }) =>
+                  <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={`${baseUrl}/Assets/avatar.svg`} alt="home" />
+                }
               </TrackVisibility>
             </Tilt>
           </Col>

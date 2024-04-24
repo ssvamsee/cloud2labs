@@ -28,7 +28,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-            key={2}
+              key={2}
               imgPath={`${baseUrl}/Assets/Projects/chatify.png`}
               title="OPAL"
               description="The Chat Application which connects users among the world and unites through audio and video call along with text messages"
@@ -37,7 +37,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-            key={3}
+              key={3}
               imgPath={`${baseUrl}/Assets/Projects/cellixbio.png`}
               title="Cellix-Bio"
               description="Cellix Bio is a pioneering biotechnology company specializing in cutting-edge solutions for personalized medicine and drug development. They leverage advanced technologies to facilitate precision diagnostics and innovative therapies, aiming to revolutionize healthcare by tailoring treatments to individual patient needs"
@@ -48,7 +48,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-            key={4}
+              key={4}
               imgPath={`${baseUrl}/Assets/Projects/CamArtisians.png`}
               title="CamArtisans"
               description="CamArtisians is a Web application that connects
@@ -64,7 +64,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-            key={5}
+              key={5}
               imgPath={`${baseUrl}/Assets/Projects/camcrew.png`}
               title="CamCrew"
               description="CamCrew is a web application or project showcasing a platform for image processing and computer vision, potentially aimed at empowering users with tools for visual data analysis. It likely offers features or demonstrations utilizing computer vision techniques, fostering exploration and experimentation within the realm of image-based technologies. It provides an interface or resources for users interested in delving into computer vision applications."
@@ -75,7 +75,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-            key={6}
+              key={6}
               imgPath={`${baseUrl}/Assets/Projects/jlmush.png`}
               title="Jlmush"
               description="Doctor-patient consultation applications provide a convenient and accessible platform for patients to connect with healthcare providers. With features such as virtual appointments and

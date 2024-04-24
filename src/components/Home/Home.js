@@ -79,7 +79,7 @@ function Home({ height }) {
           </Row>
         </Container>
 
-        {!isScrolling  && (
+        {!isScrolling && (
           <div className="field">
             <div className="mouse"></div>
           </div>

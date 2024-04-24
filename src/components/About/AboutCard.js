@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
@@ -8,7 +7,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-          <span className="highlghter">Cloud 2 Labs Founded in 2024</span> which is a pioneer in revolutionizing the digital landscape by providing a comprehensive platform for diverse development needs.
+            <span className="highlghter">Cloud 2 Labs Founded in 2024</span> which is a pioneer in revolutionizing the digital landscape by providing a comprehensive platform for diverse development needs.
             <br />
             <br />
 

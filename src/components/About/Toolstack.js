@@ -7,7 +7,7 @@ import {
   SiWindows11,
 } from "react-icons/si";
 
-import{
+import {
   DiUbuntu
 } from "react-icons/di";
 

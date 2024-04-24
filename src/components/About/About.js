@@ -3,8 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import Toolstack from "./Toolstack";
-import TrackVisibility from "react-on-screen";
+
 
 function About() {
   const baseUrl = `https://ssvamsee.github.io/cloud2labs`
@@ -12,7 +11,7 @@ function About() {
     <Container fluid className="about-section" id="about">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center",alignItems:"center", padding: "10px"}}>
+        <Row style={{ justifyContent: "center", alignItems: "center", padding: "10px" }}>
           <Col
             md={7}
             style={{
@@ -30,7 +29,7 @@ function About() {
             md={4}
             style={{ paddingTop: "120px", paddingBottom: "10px" }}
             className="about-img"
-            >
+          >
             <img src={`${baseUrl}/Assets/about.svg`} alt="about" className="img-fluid about-image" />
 
           </Col>

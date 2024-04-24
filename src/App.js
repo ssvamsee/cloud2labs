@@ -21,7 +21,8 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-console.log(baseUrl)
+  console.log(baseUrl)
+  
   return (
     <div className="App" id={load ? "no-scroll" : "scroll"}>
       {

@@ -9,22 +9,22 @@ import {
   SiMicrosoftazure,
   SiGooglecloud,
 } from "react-icons/si";
-import { FaFigma, FaAws , FaCode} from "react-icons/fa";
+import { FaFigma, FaAws, FaCode } from "react-icons/fa";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { Tooltip } from "react-tooltip"; // Correct the import
+import { Tooltip } from "react-tooltip";
 
 function Techstack() {
   return (
     <div>
-      <Tooltip id="tooltip" /> {/* Initialize Tooltip */}
+      <Tooltip id="tooltip" />
 
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col xs={4} md={2} className="tech-icons" data-tooltip-id="tooltip" data-tooltip-content="Gen Ai">
-        <GiArtificialIntelligence />
+          <GiArtificialIntelligence />
         </Col>
         <Col xs={4} md={2} className="tech-icons" data-tooltip-id="tooltip" data-tooltip-content="Web Applications">
-        <FaCode />
+          <FaCode />
         </Col>
         <Col xs={4} md={2} className="tech-icons" data-tooltip-id="tooltip" data-tooltip-content="Andoid Applications">
           <DiAndroid />
