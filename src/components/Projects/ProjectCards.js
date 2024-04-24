@@ -19,12 +19,12 @@ function ProjectCards(props) {
 
       </Card.Body>
       <Row xl={12} className="justify-content-around">
-        <Col xl={6}>
+        {/* <Col xl={6}>
           <Button variant="primary" href={props.ghLink} target="_blank" className="project-button">
             <BsGithub /> &nbsp;
             {"GitHub"}
           </Button>
-        </Col>
+        </Col> */}
         <Col xl={6}>
           {!props.isBlog && props.demoLink && (
             <Button
