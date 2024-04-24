@@ -33,7 +33,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="logo">
+        <Navbar.Brand href="#home" className="logo">
           <img src={`${baseUrl}/Assets/icon.png`} alt="brand" className="logo-img" />
         </Navbar.Brand>
         <Navbar.Toggle
